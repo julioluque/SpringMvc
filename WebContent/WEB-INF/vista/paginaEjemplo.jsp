@@ -9,7 +9,11 @@
 <body>
 
 	<h2>MVC CON SPRING</h2>
-	<a href="formulario">FORMULARIO</a>
+	<a href="alumnos/formulario">FORMULARIO OFICIAL</a>
+	
+	<H2>TESTEO SOBRE MAPEO RELATIVO</H2>
+	<a href="stress/formulario">FORMULARIO TEST</a>
+	
 
 </body>
 </html>
