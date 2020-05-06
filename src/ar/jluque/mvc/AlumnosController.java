@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class AlumnosController {
@@ -30,6 +31,18 @@ public class AlumnosController {
 		String mensajeFinal = "Quien es el mejor alumno? " + nombre;
 
 //		Agregando info al modelo
+		model.addAttribute("mensaje", mensajeFinal);
+
+		return "formularioAlumnos";
+	}
+
+	
+	@RequestMapping("/formularioProcesadoParam")
+	public String formularioProcesadoParam(@RequestParam("nombreAlumno") String nombre, Model model) {
+
+		nombre += " es el mejor alumno.";
+		String mensajeFinal = "Quien es el mejor alumno? " + nombre;
+
 		model.addAttribute("mensaje", mensajeFinal);
 
 		return "formularioAlumnos";
