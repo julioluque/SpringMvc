@@ -10,6 +10,6 @@
 
 	<h2>MVC CON SPRING</h2>
 	<a href="formulario">FORMULARIO</a>
-	
+
 </body>
 </html>

@@ -28,14 +28,11 @@ public class AlumnosController {
 		String nombre = request.getParameter("nombreAlumno");
 		nombre += " es el mejor alumno.";
 		String mensajeFinal = "Quien es el mejor alumno? " + nombre;
-		
+
 //		Agregando info al modelo
 		model.addAttribute("mensaje", mensajeFinal);
-		
+
 		return "formularioAlumnos";
 	}
 
-	
-	
-	
 }

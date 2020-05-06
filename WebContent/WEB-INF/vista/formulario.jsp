@@ -11,14 +11,13 @@
 	<h2>FORMULARIO ALUMNOS</h2>
 
 	<form action="formularioBasico" method="GET">
-		<label>FORMULARIO ALUMNOS BASICO</label>
-		<input type="text" name="nombreAlumno"> <input type="submit" value="Consultar">
+		<label>FORMULARIO ALUMNOS BASICO</label> <input type="text"
+			name="nombreAlumno"> <input type="submit" value="Consultar">
 	</form>
 
-
 	<form action="formularioProcesado" method="GET">
-	<label>FORMULARIO ALUMNOS PROCESADO</label>
-		<input type="text" name="nombreAlumno"> <input type="submit" value="Procesar">
+		<label>FORMULARIO ALUMNOS PROCESADO</label> <input type="text"
+			name="nombreAlumno"> <input type="submit" value="Procesar">
 	</form>
 
 </body>

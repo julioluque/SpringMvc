@@ -11,13 +11,23 @@
     	http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-<!-- 	Paquete a escanear en busca de componentes -->
-	<context:component-scan base-package="ar.jluque.mvc"></context:component-scan>
+<!-- 	<mvc:default-servlet-handler -->
+<!-- 		default-servlet-name="default" /> -->
 
-<!-- 	Configuracion del View resolver -->
-	<bean id="miVista" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+
+	<!-- Paquete a escanear en busca de componentes -->
+	<context:component-scan
+		base-package="ar.jluque.mvc" />
+
+	<!-- Configuracion del View resolver -->
+	<bean id="miVista"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/vista/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
+
+	<!-- <mvc:resources mapping="/recursos/**" location="/WEB-INF/recursos/"></mvc:resources> -->
+<!-- 	<mvc:resources mapping="/recursos/**" -->
+<!-- 		location="/recursos/"></mvc:resources> -->
 
 </beans>

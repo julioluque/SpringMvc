@@ -3,12 +3,12 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	id="WebApp_ID" version="3.1">
-	
+
 	<display-name>Spring Mvc</display-name>
-	
+
 	<absolute-ordering />
-	
-<!-- 	Configuracion del dispatcher servlet -->
+
+	<!-- Configuracion del dispatcher servlet -->
 	<servlet>
 		<servlet-name>Delfina</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -18,10 +18,24 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-	
-<!-- 	Ubicarcion URL del servlet -->
+
+	<!-- Ubicarcion URL del servlet -->
 	<servlet-mapping>
 		<servlet-name>Delfina</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+
+
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>default</servlet-name> -->
+<!-- 		<servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class> -->
+<!-- 		<load-on-startup>2</load-on-startup> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>default</servlet-name> -->
+<!-- 		<url-pattern>/</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+
+	
+
 </web-app>
