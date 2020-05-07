@@ -2,6 +2,7 @@ package ar.jluque.mvc;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -21,10 +22,15 @@ public class AlumnosController {
 	@RequestMapping("/muestraListado")
 	public String mostrarListaRegistrados(@RequestParam("nombre") String nombre,
 			@RequestParam("apellido") String apellido, Model model) {
-
-		String alumno = nombre + " "+ apellido;
+		String alumno = nombre + apellido;
 		model.addAttribute("confirmado", alumno);
-		
+
 		return "registrados";
 	}
+
+	@RequestMapping("/muestraModelo")
+	public String mostrarAtributosDelModelo(@ModelAttribute("solicitante") Alumno alumno) {
+		return "registrados";
+	}
+
 }

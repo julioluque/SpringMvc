@@ -13,9 +13,10 @@
 
 	<H2>TESTEO SOBRE MAPEO RELATIVO</H2>
 	<a href="stress/formulario">FORMULARIO TEST</a>
-	<br>
+	
 	<br>
 	<H2>REGISTRAR ALUMNOS</H2>
 	<a href="alumnos/muestraFormulario">FORMULARIO</a>
+	
 </body>
 </html>

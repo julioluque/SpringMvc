@@ -30,9 +30,9 @@ public class Alumno {
 		this.apellido = apellido;
 	}
 
-//	@Override
-//	public String toString() {
-//		return "Alumno [nombre=" + nombre + ", apellido=" + apellido + "]";
-//	}
+	@Override
+	public String toString() {
+		return "Alumno [nombre=" + nombre + ", apellido=" + apellido + "]";
+	}
 
 }
