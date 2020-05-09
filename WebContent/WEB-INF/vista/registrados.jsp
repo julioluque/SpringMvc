@@ -8,34 +8,35 @@
 </head>
 <body>
 	<h2>ALUMNOS REGISTRADOS</h2>
-	<table width="100%">
-		<td width="50%">
-			<div>
-				<p>INFORMACION SOLICITADA POR METODOS PARAM
-				<p>Nombre <strong>${param.nombre}</strong>
-				<p>Apellido <strong>${param.apellido}</strong>
-				<p>
-				<p>Informacionsoliciatada por metodo sobreescrito toString
-				<p><strong>${confirmado}</strong>
-			</div>
-		</td>
 
-		<td width="50%">
-			<div>
-				<p>INFORMACION SOLICITADA POR METODOS MODEL
-				<p>Nombre : <strong>${solicitante.nombre}</strong>
-				<p>Apellido : <strong>${solicitante.apellido}</strong>
-				<p><strong>${solicitante}</strong>
-				<br/><br/>
-				<p>Las Asigntaturas elegidas son : <strong>${solicitante.materias}</strong>
-				<br/>
-				<p>Se especializara en : <strong>${solicitante.optativa}</strong>
-				<br/>
-				<p>Sexo: ${solicitante.genero}
-				<br/>
-				<p>Modalidades: ${solicitante.modalidad}
-			</div>
-		</td>
-	</table>
+	<div>
+		<label>NOMBRE : </label>
+		<strong>${solicitante.nombre}</strong>
+	</div>
+	<div>
+		<label>APELLIDO: </label>
+		<strong>${solicitante.apellido}</strong>
+	</div>
+	<div>
+		<label>SOY: </label>
+		<strong>${solicitante.genero}</strong>
+	</div>
+	<div>
+		<label>IDIOMAS: </label>
+		<strong>${solicitante.idioma}</strong>
+	</div>
+	<div>
+		<label>MATERIAS A CURSAR: </label>
+		<strong>${solicitante.materias}</strong>
+	</div>
+	<div>
+		<label>ESPECIALIDAD: </label>
+		<strong>${solicitante.optativa}</strong>
+	</div>
+	<div>
+		<label>MODALIDAD DE CURSADA: </label>
+		<strong>${solicitante.modalidad}</strong>
+	</div>
+
 </body>
 </html>

@@ -1,7 +1,12 @@
 package ar.jluque.mvc;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Alumno {
 
+	@NotNull 
+	@Size(min=2, message="Debe ingresar un nombre. Campo requerido")
 	private String nombre;
 	private String apellido;
 	private String optativa;
@@ -9,9 +14,18 @@ public class Alumno {
 
 	private String genero;
 	private String modalidad;
+	private String idioma;
 
 	public Alumno() {
 
+	}
+
+	public String getIdioma() {
+		return idioma;
+	}
+
+	public void setIdioma(String idioma) {
+		this.idioma = idioma;
 	}
 
 	public String getModalidad() {
