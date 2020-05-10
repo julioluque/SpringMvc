@@ -1,23 +1,41 @@
 package ar.jluque.mvc;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 public class Alumno {
 
-	@NotNull 
-	@Size(min=2, message="Debe ingresar un nombre. Campo requerido")
+	@NotNull
+	@Size(min = 2, message = "Debe ingresar un nombre. Campo requerido")
 	private String nombre;
 	private String apellido;
+
+	@Min(value = 18, message = "Debes ser mayor de edad")
+	@Max(value = 100, message = "Mayores de 100 años, por favor consultar con asesoria.")
+	private int edad;
+	private String genero;
+
+	@Email(message="El formato de mail no es correcto")
+	private String email;
+	private String idioma;
+
 	private String optativa;
 	private String materias;
-
-	private String genero;
 	private String modalidad;
-	private String idioma;
 
 	public Alumno() {
 
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
 	}
 
 	public String getIdioma() {
@@ -26,6 +44,14 @@ public class Alumno {
 
 	public void setIdioma(String idioma) {
 		this.idioma = idioma;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getEmail() {
+		return email;
 	}
 
 	public String getModalidad() {

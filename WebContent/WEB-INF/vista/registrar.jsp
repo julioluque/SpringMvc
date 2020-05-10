@@ -14,12 +14,17 @@
 			<div>
 				DATOS PERSONALES<br/>
 				Nombre: <form:input path="nombre" /><form:errors path="nombre" style="color:red"/>
-				<br/>
+				<br/><br/>
 				Apellido: <form:input path="apellido" />
+				<br/><br/>
+				Edad: <form:input path="edad"/><form:errors path="edad" style="color:red" />
 				<br/><br/>
 				GENERO:<br/>
 				Hombre: <form:radiobutton path="genero" value="Hombre"/>
 				Mujer: <form:radiobutton path="genero" value="Mujer"/>
+				<br/><br/>
+				EMAIL: <form:input path="email"/><form:errors path="email" style="color:red" />
+				
 				<br/><br/>
 			</div>
 	

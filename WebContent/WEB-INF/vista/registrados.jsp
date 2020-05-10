@@ -18,8 +18,16 @@
 		<strong>${solicitante.apellido}</strong>
 	</div>
 	<div>
+		<label>TENGO: </label>
+		<strong>${solicitante.edad}</strong> años.
+	</div>
+	<div>
 		<label>SOY: </label>
 		<strong>${solicitante.genero}</strong>
+	</div>
+	<div>
+		<label>EMAIL: </label>
+		<strong>${solicitante.email}</strong>
 	</div>
 	<div>
 		<label>IDIOMAS: </label>
