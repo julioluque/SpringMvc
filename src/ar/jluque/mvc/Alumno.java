@@ -5,6 +5,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class Alumno {
@@ -33,8 +34,30 @@ public class Alumno {
 	private String materias;
 	private String modalidad;
 
+	@Pattern(regexp="[0-9a-zA-Z]{5}", message="El codigo postal admite solo 5 caracteres, alfanumericos")
+	private String codigoPostal;
+	
+	@Pattern(regexp="[0-9]{10}", message="El telefono celular admite 10 numeros")
+	private String telefono;
+
 	public Alumno() {
 
+	}
+
+	public String getCodigoPostal() {
+		return codigoPostal;
+	}
+
+	public void setCodigoPostal(String codigoPostal) {
+		this.codigoPostal = codigoPostal;
+	}
+
+	public String getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
 	}
 
 	public int getEdad() {

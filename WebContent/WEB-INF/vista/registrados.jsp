@@ -31,6 +31,14 @@
 		<strong>${solicitante.email}</strong>
 	</div>
 	<div>
+		<label>CODIGO POSTAL: </label>
+		<strong>${solicitante.codigoPostal}</strong>
+	</div>
+	<div>
+		<label>TELEFONO: </label>
+		<strong>${solicitante.telefono}</strong>
+	</div>
+	<div>
 		<label>IDIOMAS: </label>
 		<strong>${solicitante.idioma}</strong>
 	</div>

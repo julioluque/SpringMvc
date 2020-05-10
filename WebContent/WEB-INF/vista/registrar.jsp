@@ -26,6 +26,10 @@
 				<br/><br/>
 				EMAIL: <form:input path="email"/><form:errors path="email" style="color:red" />
 				<br/><br/>
+				CODIGO POSTAL:<form:input path="codigoPostal"/><form:errors path="codigoPostal" style="color:red"/>
+				<br/><br/>
+				TELEFONO:<form:input path="telefono"/><form:errors path="telefono" style="color:red"/>
+				
 			</div>
 			<div>
 				CONTRASEÑA:<br/> 
