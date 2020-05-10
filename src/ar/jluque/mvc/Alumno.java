@@ -3,6 +3,7 @@ package ar.jluque.mvc;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -13,16 +14,22 @@ public class Alumno {
 	private String nombre;
 	private String apellido;
 
+	@NotNull
+	@Size(min = 8, max = 16, message = "La contraseña debe tener entre 8 y 16 caracteres")
+	private String contrasenia;
+
 	@Min(value = 18, message = "Debes ser mayor de edad")
 	@Max(value = 100, message = "Mayores de 100 años, por favor consultar con asesoria.")
 	private int edad;
 	private String genero;
 
-	@Email(message="El formato de mail no es correcto")
+	@Email(message = "El formato de mail no es correcto")
 	private String email;
 	private String idioma;
 
 	private String optativa;
+
+	@NotEmpty
 	private String materias;
 	private String modalidad;
 
@@ -36,6 +43,14 @@ public class Alumno {
 
 	public void setEdad(int edad) {
 		this.edad = edad;
+	}
+
+	public String getContrasenia() {
+		return contrasenia;
+	}
+
+	public void setContrasenia(String contrasenia) {
+		this.contrasenia = contrasenia;
 	}
 
 	public String getIdioma() {

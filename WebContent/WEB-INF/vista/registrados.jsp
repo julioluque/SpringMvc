@@ -3,10 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css"	href="${pageContext.request.contextPath}/recursos/estilos/miEstilo.css">
 <meta charset="ISO-8859-1">
 <title>Registrados</title>
 </head>
-<body>
+<body class="fondo">
 	<h2>ALUMNOS REGISTRADOS</h2>
 
 	<div>

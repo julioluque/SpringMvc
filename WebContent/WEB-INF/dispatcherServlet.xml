@@ -17,7 +17,6 @@
 
 	<mvc:annotation-driven/>
 
-
 	<!-- Configuracion del View resolver -->
 	<bean id="miVista"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -25,6 +24,6 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 
-	<mvc:resources location="/recursos/" mapping="/recursos/**"></mvc:resources>
+	<mvc:resources location="/recursos/" mapping="/recursos/**" />
 
 </beans>

@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css"	href="${pageContext.request.contextPath}/recursos/estilos/miEstilo.css">
 <meta charset="ISO-8859-1">
 <title>Formulario de Registro</title>
 </head>
@@ -24,10 +25,13 @@
 				Mujer: <form:radiobutton path="genero" value="Mujer"/>
 				<br/><br/>
 				EMAIL: <form:input path="email"/><form:errors path="email" style="color:red" />
-				
 				<br/><br/>
 			</div>
-	
+			<div>
+				CONTRASEÑA:<br/> 
+				<form:password path="contrasenia"/><form:errors path="contrasenia" style="color:red"/>
+				<br/><br/>
+			</div>	
 			<div>
 				SELECCIONE LAS MATERIAS A CURSAR:<br/>
 				<form:select path="materias" multiple="true">
@@ -41,7 +45,7 @@
 					<form:option value="Sistemas" label="Sistemas" />
 					<form:option value="Historia de la programacion" label="Historia de la programacion" />
 					<form:option value="Historia de los frameworks" label="Historia de los frameworks" />
-				</form:select>
+				</form:select><form:errors path="materias" style="color:red"/>
 				<br/><br/>
 			</div>
 			<div>
