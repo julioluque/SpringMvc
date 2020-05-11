@@ -10,7 +10,6 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping("/alumnos")
@@ -25,14 +24,14 @@ public class AlumnosController {
 		return "registrar";
 	}
 
-	@RequestMapping("/muestraListado")
-	public String mostrarListaRegistrados(@RequestParam("nombre") String nombre,
-			@RequestParam("apellido") String apellido, Model model) {
-		String alumno = nombre + apellido;
-		model.addAttribute("confirmado", alumno);
-
-		return "registradosBasico";
-	}
+//	@RequestMapping("/muestraListado")
+//	public String mostrarListaRegistrados(@RequestParam("nombre") String nombre,
+//			@RequestParam("apellido") String apellido, Model model) {
+//		String alumno = nombre + apellido;
+//		model.addAttribute("confirmado", alumno);
+//
+//		return "registradosBasico";
+//	}
 	
 	
 	@InitBinder

@@ -13,6 +13,7 @@ public class Alumno {
 	@NotNull
 	@Size(min = 2, message = "Debe ingresar un nombre. Campo requerido")
 	private String nombre;
+	
 	private String apellido;
 
 	@NotNull
@@ -22,16 +23,19 @@ public class Alumno {
 	@Min(value = 18, message = "Debes ser mayor de edad")
 	@Max(value = 100, message = "Mayores de 100 años, por favor consultar con asesoria.")
 	private int edad;
+	
 	private String genero;
 
 	@Email(message = "El formato de mail no es correcto")
 	private String email;
+	
 	private String idioma;
 
 	private String optativa;
 
 	@NotEmpty
 	private String materias;
+	
 	private String modalidad;
 
 	@Pattern(regexp="[0-9a-zA-Z]{5}", message="El codigo postal admite solo 5 caracteres, alfanumericos")

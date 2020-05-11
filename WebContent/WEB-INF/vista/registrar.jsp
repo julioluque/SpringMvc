@@ -6,7 +6,7 @@
 <head>
 <link rel="stylesheet" type="text/css"	href="${pageContext.request.contextPath}/recursos/estilos/miEstilo.css">
 <meta charset="ISO-8859-1">
-<title>Formulario de Registro</title>
+<title>Registrar</title>
 </head>
 	<body>
 		<label>FORMULARIO CON MODEL</label> 

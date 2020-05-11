@@ -15,7 +15,7 @@
 	<context:component-scan
 		base-package="ar.jluque.mvc" />
 
-	<mvc:annotation-driven/>
+	<mvc:annotation-driven />
 
 	<!-- Configuracion del View resolver -->
 	<bean id="miVista"
@@ -24,6 +24,12 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 
-	<mvc:resources location="/recursos/" mapping="/recursos/**" />
+	<mvc:resources location="/recursos/"
+		mapping="/recursos/**" />
+
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="resources/messages" />
+	</bean>
 
 </beans>

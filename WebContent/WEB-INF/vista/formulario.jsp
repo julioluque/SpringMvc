@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Formulario</title>
 </head>
 <body>
 
-	<h2>FORMULARIO ALUMNOS</h2>
+	<h2>FORMULARIO</h2>
 
 	<h3>FORMULARIO ALUMNOS BASICO</h3>
 	<form action="formularioBasico" method="GET">
