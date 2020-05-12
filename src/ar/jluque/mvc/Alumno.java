@@ -8,6 +8,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import ar.jluque.mvc.validacionespersonalizadas.CPostal;
+
 public class Alumno {
 
 	@NotNull
@@ -38,7 +40,8 @@ public class Alumno {
 	
 	private String modalidad;
 
-	@Pattern(regexp="[0-9a-zA-Z]{5}", message="El codigo postal admite solo 5 caracteres, alfanumericos")
+//	@Pattern(regexp="[0-9a-zA-Z]{5}", message="El codigo postal admite solo 5 caracteres, alfanumericos")
+	@CPostal
 	private String codigoPostal;
 	
 	@Pattern(regexp="[0-9]{10}", message="El telefono celular admite 10 numeros")
