@@ -18,6 +18,8 @@
 				<br/><br/>
 				Apellido: <form:input path="apellido" />
 				<br/><br/>
+				DOCUMENTO: <form:input path="documento"/><form:errors path="documento" style="color:red" />
+				<br/><br/>
 				Edad: <form:input path="edad"/><form:errors path="edad" style="color:red" />
 				<br/><br/>
 				GENERO:<br/>

@@ -9,13 +9,14 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 import ar.jluque.mvc.validacionespersonalizadas.CPostal;
+import ar.jluque.mvc.validacionespersonalizadas.Dni;
 
 public class Alumno {
 
 	@NotNull
 	@Size(min = 2, message = "Debe ingresar un nombre. Campo requerido")
 	private String nombre;
-	
+
 	private String apellido;
 
 	@NotNull
@@ -25,30 +26,41 @@ public class Alumno {
 	@Min(value = 18, message = "Debes ser mayor de edad")
 	@Max(value = 100, message = "Mayores de 100 años, por favor consultar con asesoria.")
 	private int edad;
-	
+
+	@Dni
+	private String documento;
+
 	private String genero;
 
 	@Email(message = "El formato de mail no es correcto")
 	private String email;
-	
+
 	private String idioma;
 
 	private String optativa;
 
 	@NotEmpty
 	private String materias;
-	
+
 	private String modalidad;
 
 //	@Pattern(regexp="[0-9a-zA-Z]{5}", message="El codigo postal admite solo 5 caracteres, alfanumericos")
 	@CPostal
 	private String codigoPostal;
-	
-	@Pattern(regexp="[0-9]{10}", message="El telefono celular admite 10 numeros")
+
+	@Pattern(regexp = "[0-9]{10}", message = "El telefono celular admite 10 numeros")
 	private String telefono;
 
 	public Alumno() {
 
+	}
+
+	public String getDocumento() {
+		return documento;
+	}
+
+	public void setDocumento(String documento) {
+		this.documento = documento;
 	}
 
 	public String getCodigoPostal() {

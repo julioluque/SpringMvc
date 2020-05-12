@@ -19,6 +19,10 @@
 		<strong>${solicitante.apellido}</strong>
 	</div>
 	<div>
+		<label>DNI / CUIT: </label>
+		<strong>${solicitante.documento}</strong>
+	</div>
+	<div>
 		<label>TENGO: </label>
 		<strong>${solicitante.edad}</strong> años.
 	</div>
